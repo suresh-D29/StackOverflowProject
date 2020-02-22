@@ -1,0 +1,94 @@
+﻿@{ 
+    ViewBag.Title = "Register";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <h1>Registration</h1>
+        <form novalidate="novalidate" action="/account/register" method="post" class="needs-validate">
+            @Html.AntiForgeryToken();
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="txtName">Name</label>
+                    <input type="text" class="form-control" id="txtName" placeholder="Enter Name" name="Name" required="required" pattern="^[a-zA-Z ]*$*"
+                           autofocus="autofocus" />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">Please enter name {alphabets only}</div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="txtEmail">Email</label>
+                    <input type="email" class="form-control" id="txtEmail" placeholder="Email" name="Email" required="required" />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">Invalid email</div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="txtMobile">Mobile</label>
+                    <input type="text" class="form-control" id="txtMobile" placeholder="Mobile" name="Mobile" required="required" pattern="^[789]\d{9}$" />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">Please enter mobile number</div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="txtPassword">Password</label>
+                    <input type="password" class="form-control" id="txtPassword" placeholder="Password" name="Password" required="required"minlength="6"
+                           oninput="form.ConfirmPassword.pattern = escapeRegExp(this.value)"/>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">Password must contain at least 6 characters</div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="txtPassword">Confirm Password</label>
+                    <input type="text" class="form-control" id="txtConfirmPassword" placeholder="Confirm Password" name="ConfirmPassword" required="required/>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">Password and Confirm password do not match</div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Register</button>
+
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).on("submit", ".needs-validate".validate);
+    $(".needs-validate input").blur(validate);
+    function validate(event)
+    {
+        if ($(".needs-validate")[0].checkValidity() == false || $(".email-exit").text != "")
+        {
+            event.preventDefault();
+        }
+        $(".needs-validate")[0].classList.add("was-validated");
+    }
+
+    function escapeRegExp(str)
+    {
+        return str.replace(/[\-\[\]\/\{\}\{\}\*\+\?\.\\\^\$\|]/g, "\\$&");
+    }
+</script>
+
+
+<script>
+    $("a[href='/account/Register']").attr("id", "active");
+</script>

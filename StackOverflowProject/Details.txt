@@ -1,0 +1,8 @@
+Servide Domail--
+
+install-package EntityFramework
+install-package AutoMapper   --migrate the data from viewModel to domainmodel and domain model to viewmodel
+
+install-package Unity.Mvc5
+
+install-package Unity.WebApi

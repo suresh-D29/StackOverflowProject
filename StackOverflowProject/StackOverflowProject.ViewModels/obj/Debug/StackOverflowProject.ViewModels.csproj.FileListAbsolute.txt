@@ -1,0 +1,12 @@
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\bin\Debug\StackOverflowProject.ViewModels.dll.config
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\bin\Debug\StackOverflowProject.ViewModels.dll
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\bin\Debug\StackOverflowProject.ViewModels.pdb
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\bin\Debug\EntityFramework.dll
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\bin\Debug\EntityFramework.SqlServer.dll
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\bin\Debug\EntityFramework.xml
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\bin\Debug\EntityFramework.SqlServer.xml
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\obj\Debug\StackOverflowProject.ViewModels.csprojAssemblyReference.cache
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\obj\Debug\StackOverflowProject.ViewModels.csproj.CoreCompileInputs.cache
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\obj\Debug\StackOverflowProject.ViewModels.csproj.CopyComplete
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\obj\Debug\StackOverflowProject.ViewModels.dll
+E:\MVC\StackOverflowProject\StackOverflowProject.ViewModels\obj\Debug\StackOverflowProject.ViewModels.pdb
